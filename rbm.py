@@ -193,7 +193,7 @@ class RBM:
     return samples[:,1:]        
       
   def _logistic(self, x):
-    return 1.0 / (1 + np.exp(-x))
+    return 1.0 / (1 + np.exp(-x)) #Using Boltzmann distribution to make use of Boltzmann machine.
 
 if __name__ == '__main__':
   r = RBM(num_visible = 6, num_hidden = 2)
